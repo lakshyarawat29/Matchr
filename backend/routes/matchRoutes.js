@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { baselineMatch } = require('../controllers/matchController');
+const matchController = require('../controllers/matchController');
 
-router.post('/baseline', baselineMatch);
+router.post('/match/baseline', matchController.matchBaseline);
+router.post('/match/semantic', matchController.matchSemantic);
 
 module.exports = router;

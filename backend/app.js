@@ -9,4 +9,8 @@ app.get('/', (req, res) => {
   res.send('API is running');
 });
 
-module.exports = app; // ✅ This is crucial
+const matchRoutes = require('./routes/matchRoutes');
+app.use('/api', matchRoutes);
+
+
+module.exports = app;

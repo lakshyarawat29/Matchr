@@ -4,3 +4,4 @@ pdfminer.six
 python-docx
 spacy
 pydantic
+sentence-transformers
